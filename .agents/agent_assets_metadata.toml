@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "cN2pkjumhNXxE9-rdNMiA"
+uri = "file://artifacts/leaders-in-lipstick/public/hero-bg.png"
+type = "image"
+title = "Women in a modern boardroom"
+
+[[generated]]
+id = "9Jg69UDq3-zFWjpe7D2z1"
+uri = "file://artifacts/leaders-in-lipstick/public/summit.png"
+type = "image"
+title = "Women networking at a summit"
+
+[[generated]]
+id = "nnXcrfgXMSq_WZpsxLtn_"
+uri = "file://artifacts/leaders-in-lipstick/public/founder.png"
+type = "image"
+title = "Powerful woman executive portrait"
+
+[[generated]]
+id = "X7A0caX6PEXpH4PwrWXWC"
+uri = "file://artifacts/leaders-in-lipstick/public/corporate.png"
+type = "image"
+title = "Corporate training session"
+
+[[generated]]
+id = "PoB8ZGHvryA4DugVjEyrc"
+uri = "file://artifacts/leaders-in-lipstick/public/workshop.png"
+type = "image"
+title = "Women in workshop session"
+
+[[generated]]
+id = "abvaevWsn8tF-74qVsOmE"
+uri = "file://artifacts/leaders-in-lipstick/public/networking.png"
+type = "image"
+title = "Women networking event"
+
+[[generated]]
+id = "Zo7uHV-o1xaMXJ7eAlj27"
+uri = "file://artifacts/leaders-in-lipstick/public/speaker.png"
+type = "image"
+title = "Woman speaking on stage"
+
+[[generated]]
+id = "lFA-IhL5lEvfETRsvkexE"
+uri = "file://artifacts/leaders-in-lipstick/public/diverse-leaders.png"
+type = "image"
+title = "Diverse women leaders"
