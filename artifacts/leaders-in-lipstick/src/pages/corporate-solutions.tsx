@@ -35,23 +35,23 @@ export default function CorporateSolutions() {
             {[
               {
                 icon: <Building2 className="w-8 h-8" />,
-                title: "Custom Capability Programs",
-                desc: "End-to-end L&D solutions leveraging our 5D Framework (Diagnose, Dream, Design, Deliver, Deploy) for direct business impact."
+                title: "Bespoke L&D Solutions",
+                desc: "Powered by strategy, backed by results. We help businesses turn capability gaps into performance breakthroughs."
               },
               {
                 icon: <BrainCircuit className="w-8 h-8" />,
-                title: "Virtual & Classroom Training",
-                desc: "Flexible, facilitator-led formats including live virtual sessions with breakout rooms and face-to-face interactive workshops."
+                title: "Classroom & Virtual Training",
+                desc: "Flexible, facilitator-led formats including face-to-face interactive workshops and live virtual sessions with real-time engagement."
               },
               {
                 icon: <Users className="w-8 h-8" />,
-                title: "Behavioural Intelligence",
-                desc: "Bespoke experiences tailored to your teams. Master soft skills to enhance team collaboration and environmental awareness."
+                title: "Training Process Outsourcing (TPO)",
+                desc: "Comprehensive solutions for all your training, learning, and organizational development needs worldwide."
               },
               {
                 icon: <Tent className="w-8 h-8" />,
                 title: "Joy of Learning Outdoors (JOLO)",
-                desc: "Immersive outdoor learning sessions with customized physical activities aimed at enabling out-of-the-box performance."
+                desc: "Fun-filled outdoor learning sessions aimed at enabling trainees to perform out of the box and reach desired outcomes."
               }
             ].map((sol, i) => (
               <motion.div

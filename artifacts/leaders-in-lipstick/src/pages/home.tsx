@@ -70,17 +70,56 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">About Us</span>
               <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-primary leading-tight">Dream. Define. Do.</h2>
-              <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-light">
-                Leaders in Lipstick® is a catalyst for holistic transformation. We leverage individual and collective potential to open up limitless possibilities, delivering end-to-end L&D solutions with measurable business impact.
+              <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
+                Leaders in Lipstick® is more than a learning solutions provider—we’re a partner committed to driving success by aligning our programs with your unique goals.
               </p>
+              <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-light">
+                We deliver end-to-end solutions in the Learning & Development space, intended to have a direct and holistic impact on business results, team performances, and individual efficacies.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+                <div className="border-l-2 border-secondary pl-4">
+                  <h4 className="font-serif font-bold text-xl text-primary mb-2">Our Mission</h4>
+                  <p className="text-sm text-foreground/60 leading-relaxed">Reshaping the future of L&D by delivering innovative, scalable, and tailored training programs.</p>
+                </div>
+                <div className="border-l-2 border-secondary pl-4">
+                  <h4 className="font-serif font-bold text-xl text-primary mb-2">Our Vision</h4>
+                  <p className="text-sm text-foreground/60 leading-relaxed">To be the catalyst, leveraging individual and collective potential, opening up to limitless possibilities.</p>
+                </div>
+              </div>
               <Button variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white px-8" asChild>
-                <Link href="/about">Read Our Story</Link>
+                <Link href="/about">Read Our Full Story</Link>
               </Button>
             </div>
             <div className="order-1 md:order-2 relative">
               <div className="absolute -inset-4 border border-secondary/30 translate-x-4 translate-y-4" />
               <img src={`${import.meta.env.BASE_URL}diverse-leaders.png`} alt="Diverse Leaders" className="w-full h-auto object-cover relative z-10 shadow-2xl" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5D Framework Section */}
+      <section className="py-24 bg-white border-y border-border/30">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-16">
+            <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">Our Methodology</span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary">The 5D Framework®</h2>
+            <p className="text-foreground/60 mt-4 max-w-2xl mx-auto">Our highly experiential interventions result in quantifiable changes that give the best ROI for your organization.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            {[
+              { step: "01", label: "Diagnose", desc: "Identifying capability gaps." },
+              { step: "02", label: "Dream", desc: "Defining the future state." },
+              { step: "03", label: "Design", desc: "Crafting bespoke solutions." },
+              { step: "04", label: "Deliver", desc: "Executing high-impact training." },
+              { step: "05", label: "Deploy", desc: "Ensuring lasting transformation." }
+            ].map((item, i) => (
+              <div key={i} className="text-center group">
+                <div className="text-4xl font-serif font-bold text-secondary/30 group-hover:text-secondary transition-colors mb-4">{item.step}</div>
+                <h4 className="font-serif font-bold text-xl text-primary mb-2">{item.label}</h4>
+                <p className="text-xs text-foreground/50">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

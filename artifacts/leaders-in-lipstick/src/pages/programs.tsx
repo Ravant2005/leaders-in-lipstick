@@ -17,7 +17,7 @@ const programs = [
       },
       {
         title: "Leadership Agility",
-        desc: "Master team collaboration and environmental awareness to lead effectively in dynamic situations.",
+        desc: "Enhance capacity to lead effectively in various situations through self-management and team collaboration.",
         duration: "8 Weeks",
         format: "Online Intensive"
       }
@@ -34,46 +34,64 @@ const programs = [
         format: "Consulting/Workshop"
       },
       {
-        title: "Communication & Personal Effectiveness",
-        desc: "Enhance intra-personal and inter-personal interactions for maximum professional impact.",
+        title: "Personal Effectiveness",
+        desc: "Master the art of soft skills to enhance intra-personal and inter-personal interactions.",
         duration: "4 Weeks",
         format: "Blended Learning"
       }
     ]
   },
   {
-    category: "Future-Ready Skills (GenAI)",
+    category: "GenAI & Technical Training",
     icon: <Zap className="w-6 h-6 text-primary" />,
     items: [
       {
-        title: "Generative AI for Leaders",
-        desc: "Strategic GenAI implementation, prompt engineering, and creative content generation with AI tools.",
+        title: "Strategic GenAI for Leaders",
+        desc: "Step into the future with ChatGPT, Gemini, and Co-pilot. Practical prompt engineering for executives.",
         duration: "2 Days",
         format: "Virtual Masterclass"
       },
       {
-        title: "Tech-Enabled Productivity",
-        desc: "Create an extra hour each day using AI and digital transformation tools for executive tasks.",
-        duration: "Self-Paced",
-        format: "Digital Course"
+        title: "Enterprise-Wide GenAI Orientation",
+        desc: "Achieve more with solutions designed for growth and impact across your entire organization.",
+        duration: "Custom",
+        format: "Corporate Rollout"
       }
     ]
   },
   {
-    category: "Strategic Brand & Presence",
+    category: "Functional Excellence & Sales",
     icon: <Target className="w-6 h-6 text-primary" />,
     items: [
       {
-        title: "Personal Brand Building",
-        desc: "Transform your expertise into industry authority. Craft a narrative that attracts board seats.",
+        title: "Sales Mastery",
+        desc: "Stay ahead with innovative selling techniques while unlearning outdated practices.",
         duration: "6 Weeks",
         format: "Mastermind"
       },
       {
-        title: "Executive Presence Training",
-        desc: "Command the room with authority, elegance, and unapologetic professional advocacy.",
-        duration: "3 Days",
-        format: "In-Person Intensive"
+        title: "Business Enablement",
+        desc: "Invest in professional growth with tailored programs to expand knowledge and stay relevant.",
+        duration: "Custom",
+        format: "Digital Library"
+      }
+    ]
+  },
+  {
+    category: "Digital Content & LMS",
+    icon: <BookOpen className="w-6 h-6 text-primary" />,
+    items: [
+      {
+        title: "Customised Digital Content",
+        desc: "E-learning, Animation, and Live Action Shoot solutions in 100+ languages.",
+        duration: "On-Demand",
+        format: "Digital Assets"
+      },
+      {
+        title: "LMS/LXP Solutions",
+        desc: "Future-ready Learning Management Systems with role-based skill mapping and 360-degree learning.",
+        duration: "Ongoing",
+        format: "Platform"
       }
     ]
   }

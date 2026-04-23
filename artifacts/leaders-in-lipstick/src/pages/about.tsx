@@ -81,15 +81,23 @@ export default function About() {
               <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">The Founder</span>
               <h2 className="font-serif text-4xl font-bold mb-6">Siji Varghese</h2>
               <p className="text-xl font-serif text-foreground/80 italic mb-8">
-                "Dream-Define-Do. We celebrate the power of women leaders who are born to stand out."
+                "Why Fit in when you are born to Stand-out. Dream-Define-Do."
               </p>
-              <div className="space-y-4 text-muted-foreground font-light mb-8">
+              <div className="space-y-4 text-muted-foreground font-light mb-8 leading-loose">
                 <p>
-                  Siji Varghese is the Founder of Leaders in Lipstick®, a TEDx speaker, and a UN Karmaveer Chakra awardee. As a Behavioral Change & ROI Consultant, she specializes in creating quantifiable transformations.
+                  Siji Varghese is a Behavioral Change & ROI Consultant, Global Professional Speaker, and TEDx Speaker. She is a recipient of the prestigious UN Karmaveer Chakra award.
                 </p>
                 <p>
-                  With over a decade of expertise, she has refined the art of helping businesses turn capability gaps into performance breakthroughs, empowering individuals to shift culture and move business metrics.
+                  As the Founder of Leaders in Lipstick®, she delivers end-to-end solutions in the L&D space that have a direct and holistic impact on business results. Her highly experiential interventions are powered by strategy and backed by over 14 years of refining the craft.
                 </p>
+                <p>
+                  She specializes in helping businesses turn capability gaps into performance breakthroughs, leveraging individual and collective potential to open up limitless possibilities.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 mb-8">
+                <span className="bg-primary/5 text-primary px-4 py-2 text-xs font-bold uppercase tracking-widest border border-primary/10">TEDx Speaker</span>
+                <span className="bg-primary/5 text-primary px-4 py-2 text-xs font-bold uppercase tracking-widest border border-primary/10">UN Karmaveer Chakra</span>
+                <span className="bg-primary/5 text-primary px-4 py-2 text-xs font-bold uppercase tracking-widest border border-primary/10">ROI Consultant</span>
               </div>
               <Button asChild className="rounded-none bg-primary hover:bg-primary/90 text-white">
                 <Link href="/contact">Book for Speaking</Link>
@@ -97,8 +105,35 @@ export default function About() {
             </motion.div>
 
             <div className="order-first md:order-last">
-              <img src={`${import.meta.env.BASE_URL}founder.png`} alt="Siji Varghese" className="w-full h-[600px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}founder.png`} alt="Siji Varghese" className="w-full h-[700px] object-cover shadow-2xl" />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Methodology Section */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl font-bold mb-4">Our 5D Methodology</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Designed for people, built for impact. Our framework ensures measurable success.</p>
+          </div>
+          <div className="grid md:grid-cols-5 gap-8">
+            {[
+              { title: "Diagnose", desc: "Capability gap analysis." },
+              { title: "Dream", desc: "Future state visualization." },
+              { title: "Design", desc: "Bespoke solution architecting." },
+              { title: "Deliver", desc: "Facilitator-led execution." },
+              { title: "Deploy", desc: "Deployment & ROI tracking." }
+            ].map((m, i) => (
+              <div key={i} className="p-8 border border-border bg-card hover:border-primary/30 transition-all text-center">
+                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center rounded-full mx-auto mb-6 font-serif font-bold text-xl">
+                  {i + 1}
+                </div>
+                <h3 className="font-serif font-bold text-xl mb-3">{m.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
