@@ -36,22 +36,22 @@ export default function CorporateSolutions() {
               {
                 icon: <Building2 className="w-8 h-8" />,
                 title: "Custom Capability Programs",
-                desc: "End-to-end leadership development journeys tailored to your company's specific strategic goals and cultural context."
+                desc: "End-to-end L&D solutions leveraging our 5D Framework (Diagnose, Dream, Design, Deliver, Deploy) for direct business impact."
               },
               {
                 icon: <BrainCircuit className="w-8 h-8" />,
-                title: "AI for Executives",
-                desc: "Demystifying artificial intelligence for senior women leaders. Strategic implementation over technical jargon."
+                title: "Virtual & Classroom Training",
+                desc: "Flexible, facilitator-led formats including live virtual sessions with breakout rooms and face-to-face interactive workshops."
               },
               {
                 icon: <Users className="w-8 h-8" />,
-                title: "Diversity & Inclusion Excellence",
-                desc: "Actionable D&I frameworks that move beyond optics to create systemic change and measurable retention."
+                title: "Behavioural Intelligence",
+                desc: "Bespoke experiences tailored to your teams. Master soft skills to enhance team collaboration and environmental awareness."
               },
               {
                 icon: <Tent className="w-8 h-8" />,
-                title: "Executive Retreats",
-                desc: "Immersive off-site experiences designed to forge deep alignment among your senior leadership team."
+                title: "Joy of Learning Outdoors (JOLO)",
+                desc: "Immersive outdoor learning sessions with customized physical activities aimed at enabling out-of-the-box performance."
               }
             ].map((sol, i) => (
               <motion.div

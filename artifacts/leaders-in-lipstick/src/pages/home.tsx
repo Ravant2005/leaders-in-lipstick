@@ -69,9 +69,9 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
               <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">About Us</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-primary leading-tight">We are the network you were told didn't exist.</h2>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-primary leading-tight">Dream. Define. Do.</h2>
               <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-light">
-                Leaders in Lipstick is a bold, unapologetic collective of visionaries, operators, and disruptors. We provide the strategy, networks, and advocacy needed to command the room and transform industries.
+                Leaders in Lipstick® is a catalyst for holistic transformation. We leverage individual and collective potential to open up limitless possibilities, delivering end-to-end L&D solutions with measurable business impact.
               </p>
               <Button variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white px-8" asChild>
                 <Link href="/about">Read Our Story</Link>
@@ -94,9 +94,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Boardroom Mentorship", desc: "Preparing the next generation of female board directors.", img: `${import.meta.env.BASE_URL}workshop.png` },
-              { title: "Personal Brand Building", desc: "Turn your expertise into industry-leading authority.", img: `${import.meta.env.BASE_URL}corporate.png` },
-              { title: "Executive Presence", desc: "Command the room with authority and elegance.", img: `${import.meta.env.BASE_URL}speaker.png` }
+              { title: "Leaders in Lipstick®", desc: "Our flagship program to amplify strengths and drive business impact.", img: `${import.meta.env.BASE_URL}workshop.png` },
+              { title: "Behavioural Intelligence", desc: "Master soft skills for enhanced team performance and ROI.", img: `${import.meta.env.BASE_URL}corporate.png` },
+              { title: "GenAI for Leaders", desc: "Future-proof your leadership with strategic AI implementation.", img: `${import.meta.env.BASE_URL}speaker.png` }
             ].map((program, i) => (
               <motion.div key={i} whileHover={{ y: -10 }} className="group bg-[#FDFBF7] border border-border/50 overflow-hidden shadow-sm hover:shadow-xl transition-all">
                 <div className="h-64 overflow-hidden">
@@ -124,9 +124,9 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <span className="text-secondary uppercase tracking-widest text-sm font-bold mb-4 block">For Organizations</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 leading-tight">Transform Your Corporate Culture.</h2>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8 leading-tight">Bespoke Training. Quantifiable Results.</h2>
               <p className="text-white/70 text-lg mb-10 leading-relaxed font-light">
-                We partner with forward-thinking organizations to build robust pipelines of female leadership through bespoke training and advisory.
+                Leveraging our 5D Framework—Diagnose, Dream, Design, Deliver, Deploy—we partner with organizations to build high-performance cultures and resilient leadership pipelines.
               </p>
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div>

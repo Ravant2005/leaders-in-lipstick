@@ -49,18 +49,18 @@ export default function About() {
               <h2 className="font-serif text-4xl font-bold mb-8">The Mission</h2>
               <div className="space-y-6 text-muted-foreground text-lg leading-relaxed font-light">
                 <p>
-                  To accelerate the ascent of women into the highest echelons of leadership globally by providing elite strategy, untethered networks, and unapologetic advocacy.
+                  To be the catalyst in the Learning & Development space, delivering end-to-end solutions that have a direct and holistic impact on business results, team performances, and individual efficacies.
                 </p>
                 <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div>
                     <Target className="w-8 h-8 text-primary mb-4" />
                     <h3 className="font-serif font-bold text-xl mb-2 text-foreground">The Vision</h3>
-                    <p className="text-sm">A global economy where the boardroom perfectly reflects the world it serves.</p>
+                    <p className="text-sm">Leveraging individual and collective potential to open up limitless possibilities for women globally.</p>
                   </div>
                   <div>
                     <Globe className="w-8 h-8 text-primary mb-4" />
-                    <h3 className="font-serif font-bold text-xl mb-2 text-foreground">The Scale</h3>
-                    <p className="text-sm">Impacting 100,000 executive careers by 2030 across all major industries.</p>
+                    <h3 className="font-serif font-bold text-xl mb-2 text-foreground">The 5D Framework</h3>
+                    <p className="text-sm">Our unique methodology: Diagnose, Dream, Design, Deliver, and Deploy.</p>
                   </div>
                 </div>
               </div>
@@ -79,16 +79,16 @@ export default function About() {
               viewport={{ once: true }}
             >
               <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">The Founder</span>
-              <h2 className="font-serif text-4xl font-bold mb-6">Alexandra Sterling</h2>
+              <h2 className="font-serif text-4xl font-bold mb-6">Siji Varghese</h2>
               <p className="text-xl font-serif text-foreground/80 italic mb-8">
-                "We don't need another lean-in seminar. We need a takeover strategy."
+                "Dream-Define-Do. We celebrate the power of women leaders who are born to stand out."
               </p>
               <div className="space-y-4 text-muted-foreground font-light mb-8">
                 <p>
-                  After 15 years navigating the sharpest corners of Fortune 500 boardrooms, Alexandra realized the missing link wasn't capability—it was capital-P Power.
+                  Siji Varghese is the Founder of Leaders in Lipstick®, a TEDx speaker, and a UN Karmaveer Chakra awardee. As a Behavioral Change & ROI Consultant, she specializes in creating quantifiable transformations.
                 </p>
                 <p>
-                  She founded Leaders in Lipstick to bridge the gap between being excellent at your job and commanding the room. Today, she advises global CEOs and architects leadership frameworks for top-tier enterprises.
+                  With over a decade of expertise, she has refined the art of helping businesses turn capability gaps into performance breakthroughs, empowering individuals to shift culture and move business metrics.
                 </p>
               </div>
               <Button asChild className="rounded-none bg-primary hover:bg-primary/90 text-white">
@@ -97,7 +97,7 @@ export default function About() {
             </motion.div>
 
             <div className="order-first md:order-last">
-              <img src={`${import.meta.env.BASE_URL}founder.png`} alt="Alexandra Sterling" className="w-full h-[600px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}founder.png`} alt="Siji Varghese" className="w-full h-[600px] object-cover" />
             </div>
           </div>
         </div>

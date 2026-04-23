@@ -2,59 +2,77 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Star, Crown, TrendingUp } from "lucide-react";
+import { ArrowRight, BookOpen, Star, Crown, TrendingUp, Zap, Users, Brain, Target } from "lucide-react";
 
 const programs = [
   {
-    category: "Executive Mastery",
+    category: "Executive Leadership Mastery",
     icon: <Crown className="w-6 h-6 text-primary" />,
     items: [
       {
-        title: "Boardroom Mentorship",
-        desc: "A 6-month intensive for directors and VP-level leaders preparing for C-suite transition.",
-        duration: "6 Months",
-        format: "Hybrid"
+        title: "Leaders in Lipstick® Program",
+        desc: "Our flagship 'Dream-Define-Do' program for women leaders. Amplify strengths and address skill gaps.",
+        duration: "12 Weeks",
+        format: "Hybrid Cohort"
       },
       {
-        title: "Strategic Thinking & Influence",
-        desc: "Master the chess game of corporate dynamics. Learn to shape outcomes before the meeting starts.",
+        title: "Leadership Agility",
+        desc: "Master team collaboration and environmental awareness to lead effectively in dynamic situations.",
         duration: "8 Weeks",
-        format: "Online Cohort"
+        format: "Online Intensive"
       }
     ]
   },
   {
-    category: "Brand & Authority",
-    icon: <Star className="w-6 h-6 text-primary" />,
+    category: "Behavioural Intelligence & Soft Skills",
+    icon: <Brain className="w-6 h-6 text-primary" />,
     items: [
       {
-        title: "Personal Brand Building",
-        desc: "Transform your expertise into industry authority. Craft a narrative that attracts high-level opportunities.",
-        duration: "4 Weeks",
-        format: "Online Cohort"
+        title: "Behavioural ROI Consulting",
+        desc: "Experiential interventions resulting in quantifiable changes for individual and team efficacy.",
+        duration: "Custom",
+        format: "Consulting/Workshop"
       },
       {
-        title: "LinkedIn Authority Building",
-        desc: "Tactical execution for executives to dominate thought leadership on the world's largest professional network.",
+        title: "Communication & Personal Effectiveness",
+        desc: "Enhance intra-personal and inter-personal interactions for maximum professional impact.",
+        duration: "4 Weeks",
+        format: "Blended Learning"
+      }
+    ]
+  },
+  {
+    category: "Future-Ready Skills (GenAI)",
+    icon: <Zap className="w-6 h-6 text-primary" />,
+    items: [
+      {
+        title: "Generative AI for Leaders",
+        desc: "Strategic GenAI implementation, prompt engineering, and creative content generation with AI tools.",
+        duration: "2 Days",
+        format: "Virtual Masterclass"
+      },
+      {
+        title: "Tech-Enabled Productivity",
+        desc: "Create an extra hour each day using AI and digital transformation tools for executive tasks.",
         duration: "Self-Paced",
         format: "Digital Course"
       }
     ]
   },
   {
-    category: "Founder & Entrepreneur",
-    icon: <TrendingUp className="w-6 h-6 text-primary" />,
+    category: "Strategic Brand & Presence",
+    icon: <Target className="w-6 h-6 text-primary" />,
     items: [
       {
-        title: "Startup Leadership Edge",
-        desc: "For female founders scaling from Seed to Series B. Manage boards, build culture, and lead through hyper-growth.",
-        duration: "12 Weeks",
-        format: "Hybrid Cohort"
+        title: "Personal Brand Building",
+        desc: "Transform your expertise into industry authority. Craft a narrative that attracts board seats.",
+        duration: "6 Weeks",
+        format: "Mastermind"
       },
       {
-        title: "Negotiation Masterclass",
-        desc: "From term sheets to vendor contracts. Learn the aggressive, elegant negotiation strategies that win.",
-        duration: "2 Days",
+        title: "Executive Presence Training",
+        desc: "Command the room with authority, elegance, and unapologetic professional advocacy.",
+        duration: "3 Days",
         format: "In-Person Intensive"
       }
     ]
