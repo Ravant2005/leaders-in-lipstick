@@ -21,7 +21,7 @@ export default function Resources() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-            
+
             {/* Featured Article */}
             <div className="md:col-span-8">
               <h2 className="font-serif text-3xl font-bold mb-8 flex items-center gap-3">

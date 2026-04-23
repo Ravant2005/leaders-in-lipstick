@@ -63,7 +63,7 @@ export default function Events() {
                 desc: "A 3-day deep dive into scaling operations and securing Series B.",
               }
             ].map((event, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}

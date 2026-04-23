@@ -40,7 +40,7 @@ export default function SuccessStories() {
                 role: "Founder, Creative Agency",
               }
             ].map((story, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

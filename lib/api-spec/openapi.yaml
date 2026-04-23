@@ -24,6 +24,58 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /members:
+    get:
+      operationId: getMembers
+      summary: Get all members
+      responses:
+        "200":
+          description: List of members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Member"
+  /programs:
+    get:
+      operationId: getPrograms
+      summary: Get all programs
+      responses:
+        "200":
+          description: List of programs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Program"
+  /events:
+    get:
+      operationId: getEvents
+      summary: Get all events
+      responses:
+        "200":
+          description: List of events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Event"
+  /contact:
+    post:
+      operationId: submitContact
+      summary: Submit contact form
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ContactSubmission"
+      responses:
+        "201":
+          description: Created
 components:
   schemas:
     HealthStatus:
@@ -33,4 +85,34 @@ components:
           type: string
       required:
         - status
+    Member:
+      type: object
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        role: { type: string }
+        location: { type: string }
+        avatar: { type: string }
+    Program:
+      type: object
+      properties:
+        id: { type: integer }
+        title: { type: string }
+        category: { type: string }
+        description: { type: string }
+    Event:
+      type: object
+      properties:
+        id: { type: integer }
+        title: { type: string }
+        type: { type: string }
+        date: { type: string }
+        location: { type: string }
+    ContactSubmission:
+      type: object
+      properties:
+        name: { type: string }
+        email: { type: string }
+        message: { type: string }
+        type: { type: string }
 

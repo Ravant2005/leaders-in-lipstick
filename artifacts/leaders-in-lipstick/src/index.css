@@ -68,75 +68,81 @@
 
 /* LIGHT MODE */
 :root {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
+  --button-outline: rgba(0, 0, 0, .10);
+  --badge-outline: rgba(0, 0, 0, .05);
 
   /* Automatic computation of border around primary / danger buttons */
-  --opaque-button-border-intensity: -8; /* In terms of percentages */
+  --opaque-button-border-intensity: -8;
+  /* In terms of percentages */
 
   /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
+  --elevate-1: rgba(0, 0, 0, .03);
+  --elevate-2: rgba(0, 0, 0, .08);
 
-  --background: 40 20% 98%; /* Warm creamy off-white */
-  --foreground: 240 10% 10%; /* Deep dark blue/charcoal */
+  --background: 40 33% 98%;
+  /* More refined cream */
+  --foreground: 350 20% 12%;
+  /* Darker for better contrast */
 
-  --border: 40 10% 85%;
-  --input: 40 10% 85%;
-  --ring: 350 70% 35%; /* Crimson */
+  --border: 42 20% 90%;
+  --input: 42 20% 90%;
+  --ring: 355 75% 18%;
 
-  --card: 40 20% 98%;
-  --card-foreground: 240 10% 10%;
-  --card-border: 40 10% 85%;
+  --card: 0 0% 100%;
+  --card-foreground: 350 20% 12%;
+  --card-border: 42 20% 90%;
 
-  --popover: 40 20% 98%;
-  --popover-foreground: 240 10% 10%;
-  --popover-border: 40 10% 85%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 350 20% 12%;
+  --popover-border: 42 20% 90%;
 
-  --primary: 350 70% 35%; /* Crimson / Jewel Red */
+  --primary: 354 79% 21%;
+  /* Matches #5c0a11 exactly */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 45 40% 20%; /* Deep Gold / Bronze */
-  --secondary-foreground: 40 20% 98%;
+  --secondary: 42 40% 65%;
+  /* Soft Gold */
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 40 15% 92%;
-  --muted-foreground: 240 5% 40%;
+  --muted: 40 20% 96%;
+  --muted-foreground: 350 10% 45%;
 
-  --accent: 45 80% 50%; /* Bright Gold */
-  --accent-foreground: 240 10% 10%;
+  --accent: 42 40% 65%;
+  /* Gold as accent */
+  --accent-foreground: 354 79% 21%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --chart-1: 350 70% 35%;
-  --chart-2: 45 80% 50%;
-  --chart-3: 220 50% 30%;
-  --chart-4: 280 60% 40%;
-  --chart-5: 160 50% 40%;
+  --chart-1: 355 80% 20%;
+  --chart-2: 42 40% 65%;
+  --chart-3: 15 60% 40%;
+  --chart-4: 5 50% 30%;
+  --chart-5: 0 40% 20%;
 
-  --sidebar: 40 20% 98%;
-  --sidebar-foreground: 240 10% 10%;
-  --sidebar-border: 40 10% 85%;
-  --sidebar-primary: 350 70% 35%;
+  --sidebar: 40 35% 96%;
+  --sidebar-foreground: 350 20% 15%;
+  --sidebar-border: 42 40% 85%;
+  --sidebar-primary: 355 80% 20%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 40 15% 92%;
-  --sidebar-accent-foreground: 240 10% 10%;
-  --sidebar-ring: 350 70% 35%;
+  --sidebar-accent: 40 20% 92%;
+  --sidebar-accent-foreground: 350 20% 15%;
+  --sidebar-ring: 355 80% 20%;
 
-  --app-font-sans: 'Plus Jakarta Sans', sans-serif;
+  --app-font-sans: 'Inter', 'Plus Jakarta Sans', sans-serif;
   --app-font-serif: 'Playfair Display', serif;
   --app-font-mono: 'Space Mono', monospace;
-  --radius: 0.25rem;
-  
-  --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0, 0.02);
-  --shadow-xs: 0px 2px 0px 0px rgba(0,0,0, 0.04);
-  --shadow-sm: 0px 2px 0px 0px rgba(0,0,0, 0.04), 0px 1px 2px -1px rgba(0,0,0, 0.02);
-  --shadow: 0px 2px 0px 0px rgba(0,0,0, 0.04), 0px 1px 2px -1px rgba(0,0,0, 0.02);
-  --shadow-md: 0px 2px 0px 0px rgba(0,0,0, 0.04), 0px 2px 4px -1px rgba(0,0,0, 0.02);
-  --shadow-lg: 0px 2px 0px 0px rgba(0,0,0, 0.04), 0px 4px 6px -1px rgba(0,0,0, 0.02);
-  --shadow-xl: 0px 2px 0px 0px rgba(0,0,0, 0.04), 0px 8px 10px -1px rgba(0,0,0, 0.02);
-  --shadow-2xl: 0px 2px 0px 0px rgba(0,0,0, 0.04);
-  
+  --radius: 0;
+
+  --shadow-2xs: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+  --shadow-xs: 0px 4px 10px 0px rgba(0, 0, 0, 0.03);
+  --shadow-sm: 0px 6px 14px 0px rgba(135, 115, 75, 0.05); /* soft gold shadow */
+  --shadow: 0px 8px 24px -4px rgba(135, 115, 75, 0.08); /* elegant shadow */
+  --shadow-md: 0px 12px 30px -4px rgba(135, 115, 75, 0.1);
+  --shadow-lg: 0px 16px 40px -4px rgba(135, 115, 75, 0.15);
+  --shadow-xl: 0px 24px 50px -4px rgba(135, 115, 75, 0.2);
+  --shadow-2xl: 0px 30px 60px -4px rgba(135, 115, 75, 0.25);
+
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 
@@ -157,40 +163,46 @@
 }
 
 .dark {
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
+  --button-outline: rgba(255, 255, 255, .10);
+  --badge-outline: rgba(255, 255, 255, .05);
 
-  --opaque-button-border-intensity: 9;  /* In terms of percentages */
+  --opaque-button-border-intensity: 9;
+  /* In terms of percentages */
 
-  --elevate-1: rgba(255,255,255, .04);
-  --elevate-2: rgba(255,255,255, .09);
+  --elevate-1: rgba(255, 255, 255, .04);
+  --elevate-2: rgba(255, 255, 255, .09);
 
-  --background: 240 10% 8%; /* Very dark warm charcoal */
-  --foreground: 40 20% 98%;
+  --background: 0 100% 6%;
+  /* Extremely dark crimson/black */
+  --foreground: 0 0% 98%;
 
-  --border: 240 10% 20%;
-  --input: 240 10% 20%;
-  --ring: 350 70% 45%;
+  --border: 46 65% 52%;
+  /* Gold accent */
+  --input: 46 65% 52%;
+  --ring: 46 65% 52%;
 
-  --card: 240 10% 12%;
-  --card-foreground: 40 20% 98%;
-  --card-border: 240 10% 20%;
+  --card: 0 100% 8%;
+  --card-foreground: 0 0% 98%;
+  --card-border: 46 65% 52%;
 
-  --popover: 240 10% 12%;
-  --popover-foreground: 40 20% 98%;
-  --popover-border: 240 10% 20%;
+  --popover: 0 100% 8%;
+  --popover-foreground: 0 0% 98%;
+  --popover-border: 46 65% 52%;
 
-  --primary: 350 70% 40%;
+  --primary: 0 100% 27%;
+  /* Cherry Red */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 45 40% 30%;
-  --secondary-foreground: 40 20% 98%;
+  --secondary: 46 65% 52%;
+  /* Gold */
+  --secondary-foreground: 0 0% 10%;
+  /* Dark text for contrast on gold */
 
-  --muted: 240 10% 20%;
-  --muted-foreground: 240 5% 70%;
+  --muted: 0 100% 10%;
+  --muted-foreground: 0 0% 60%;
 
-  --accent: 45 80% 60%;
-  --accent-foreground: 240 10% 10%;
+  --accent: 46 65% 52%;
+  --accent-foreground: 0 0% 10%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
@@ -215,10 +227,28 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply font-sans antialiased bg-background text-foreground selection:bg-primary/20 selection:text-primary;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight text-foreground;
+
+  a {
+    @apply text-primary transition-colors duration-300;
+  }
+
+  a:hover {
+    @apply text-primary opacity-80;
+  }
+
+  h1,
+  h3,
+  h5 {
+    @apply font-serif tracking-tight text-primary;
+  }
+
+  h2,
+  h4,
+  h6 {
+    @apply font-serif tracking-tight text-primary;
   }
 }

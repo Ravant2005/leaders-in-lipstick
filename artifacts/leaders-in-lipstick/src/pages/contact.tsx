@@ -19,7 +19,7 @@ const formSchema = z.object({
 
 export default function Contact() {
   const { toast } = useToast();
-  
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -56,7 +56,7 @@ export default function Contact() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16">
-            
+
             <div>
               <h2 className="font-serif text-3xl font-bold mb-8">Direct Inquiry</h2>
               <Form {...form}>
@@ -111,7 +111,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel className="uppercase tracking-widest text-xs font-bold text-muted-foreground">Inquiry Type</FormLabel>
                           <FormControl>
-                            <select 
+                            <select
                               className="flex h-10 w-full rounded-none border border-border bg-card px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary disabled:cursor-not-allowed disabled:opacity-50"
                               {...field}
                             >
@@ -134,10 +134,10 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel className="uppercase tracking-widest text-xs font-bold text-muted-foreground">Message</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder="How can we help you?" 
-                            className="min-h-[150px] rounded-none border-border bg-card focus-visible:ring-primary" 
-                            {...field} 
+                          <Textarea
+                            placeholder="How can we help you?"
+                            className="min-h-[150px] rounded-none border-border bg-card focus-visible:ring-primary"
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage />
@@ -160,14 +160,14 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-primary shrink-0" />
                     <div>
                       <h4 className="font-bold font-serif mb-1">New York</h4>
-                      <p className="text-muted-foreground font-light">One World Trade Center<br/>Suite 4500<br/>New York, NY 10007</p>
+                      <p className="text-muted-foreground font-light">One World Trade Center<br />Suite 4500<br />New York, NY 10007</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-primary shrink-0" />
                     <div>
                       <h4 className="font-bold font-serif mb-1">London</h4>
-                      <p className="text-muted-foreground font-light">Level 39, One Canada Square<br/>Canary Wharf<br/>London E14 5AB</p>
+                      <p className="text-muted-foreground font-light">Level 39, One Canada Square<br />Canary Wharf<br />London E14 5AB</p>
                     </div>
                   </div>
                 </div>

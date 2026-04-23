@@ -39,7 +39,7 @@ export default function About() {
               <div className="absolute -inset-4 border border-primary/20 -translate-x-4 -translate-y-4" />
               <img src="/diverse-leaders.png" alt="Diverse women leaders" className="w-full h-auto object-cover relative z-10" />
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -95,7 +95,7 @@ export default function About() {
                 <Link href="/contact">Book for Speaking</Link>
               </Button>
             </motion.div>
-            
+
             <div className="order-first md:order-last">
               <img src="/founder.png" alt="Alexandra Sterling" className="w-full h-[600px] object-cover" />
             </div>

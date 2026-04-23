@@ -64,12 +64,13 @@ const programs = [
 export default function Programs() {
   return (
     <Layout>
-      <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-card border-b border-border">
-        <div className="container mx-auto px-4 md:px-6">
+      <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-[#FDFBF7] border-b border-border/30 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-[url('/hero-bg.png')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl">
             <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">The Curriculum</span>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8">Sharpen Your Edge.</h1>
-            <p className="text-xl text-muted-foreground leading-relaxed font-light max-w-2xl">
+            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8 text-primary">Sharpen Your Edge.</h1>
+            <p className="text-xl text-foreground/70 leading-relaxed font-light max-w-2xl">
               Elite curriculum designed by operators, for operators. No fluff. Just tactical, high-leverage frameworks to scale your impact.
             </p>
           </div>
@@ -80,7 +81,7 @@ export default function Programs() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-32">
             {programs.map((category, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +91,7 @@ export default function Programs() {
                   {category.icon}
                   <h2 className="font-serif text-3xl font-bold">{category.category}</h2>
                 </div>
-                
+
                 <div className="grid md:grid-cols-2 gap-8">
                   {category.items.map((program, pIdx) => (
                     <div key={pIdx} className="bg-card border border-border p-8 hover:border-primary/50 transition-colors group">
@@ -99,7 +100,7 @@ export default function Programs() {
                         <BookOpen className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                       </div>
                       <p className="text-muted-foreground mb-8 font-light min-h-[4rem]">{program.desc}</p>
-                      
+
                       <div className="flex items-center justify-between mt-auto">
                         <div className="flex gap-4 text-xs font-bold uppercase tracking-wider text-muted-foreground">
                           <span>{program.duration}</span>
@@ -119,13 +120,14 @@ export default function Programs() {
         </div>
       </section>
 
-      <section className="py-32 bg-foreground text-background text-center">
-        <div className="container mx-auto px-4">
+      <section className="py-32 bg-[#310103] text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[url('/networking.png')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Not sure where to start?</h2>
-          <p className="text-xl text-background/80 mb-10 font-light max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 mb-12 font-light max-w-2xl mx-auto">
             Book a complimentary strategy call with our advisors to map out your executive development plan.
           </p>
-          <Button size="lg" className="rounded-none bg-primary hover:bg-primary/90 text-white px-10">
+          <Button size="lg" className="rounded-none bg-secondary text-primary hover:bg-white px-12 h-14 font-bold uppercase tracking-widest text-sm">
             Book Consultation
           </Button>
         </div>

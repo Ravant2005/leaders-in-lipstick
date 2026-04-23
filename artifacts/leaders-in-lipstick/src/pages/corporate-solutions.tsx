@@ -54,7 +54,7 @@ export default function CorporateSolutions() {
                 desc: "Immersive off-site experiences designed to forge deep alignment among your senior leadership team."
               }
             ].map((sol, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export default function CorporateSolutions() {
                   "Our corporate partners see a 40% increase in retention of senior female talent within 12 months."
                 ].map((stat, i) => (
                   <li key={i} className="flex gap-4 items-start">
-                    <div className="text-primary font-bold mt-1">0{i+1}.</div>
+                    <div className="text-primary font-bold mt-1">0{i + 1}.</div>
                     <div className="text-muted-foreground font-light text-lg">{stat}</div>
                   </li>
                 ))}
