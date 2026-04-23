@@ -65,7 +65,7 @@ export default function Programs() {
   return (
     <Layout>
       <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-[#FDFBF7] border-b border-border/30 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[url('/hero-bg.png')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-5 bg-cover bg-center" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.png)` }}></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-4xl">
             <span className="text-primary uppercase tracking-widest text-sm font-bold mb-4 block">The Curriculum</span>
@@ -121,7 +121,7 @@ export default function Programs() {
       </section>
 
       <section className="py-32 bg-[#310103] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('/networking.png')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 opacity-10 bg-cover bg-center" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}networking.png)` }}></div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-8">Not sure where to start?</h2>
           <p className="text-xl text-white/70 mb-12 font-light max-w-2xl mx-auto">

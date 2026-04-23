@@ -20,7 +20,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center bg-[#FDFBF7] overflow-hidden">
         <div className="absolute inset-0 right-0 z-0 hidden md:block w-[55%] ml-auto">
            <div className="absolute inset-0 bg-gradient-to-r from-[#FDFBF7] via-[#FDFBF7]/40 to-transparent z-10" />
-           <img src="/hero-bg.png" alt="Women Leaders Networking" className="w-full h-full object-cover" />
+           <img src={`${import.meta.env.BASE_URL}hero-bg.png`} alt="Women Leaders Networking" className="w-full h-full object-cover" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-20 flex flex-col pt-32 pb-20">
@@ -79,7 +79,7 @@ export default function Home() {
             </div>
             <div className="order-1 md:order-2 relative">
               <div className="absolute -inset-4 border border-secondary/30 translate-x-4 translate-y-4" />
-              <img src="/diverse-leaders.png" alt="Diverse Leaders" className="w-full h-auto object-cover relative z-10 shadow-2xl" />
+              <img src={`${import.meta.env.BASE_URL}diverse-leaders.png`} alt="Diverse Leaders" className="w-full h-auto object-cover relative z-10 shadow-2xl" />
             </div>
           </div>
         </div>
@@ -94,9 +94,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Boardroom Mentorship", desc: "Preparing the next generation of female board directors.", img: "/workshop.png" },
-              { title: "Personal Brand Building", desc: "Turn your expertise into industry-leading authority.", img: "/corporate.png" },
-              { title: "Executive Presence", desc: "Command the room with authority and elegance.", img: "/speaker.png" }
+              { title: "Boardroom Mentorship", desc: "Preparing the next generation of female board directors.", img: `${import.meta.env.BASE_URL}workshop.png` },
+              { title: "Personal Brand Building", desc: "Turn your expertise into industry-leading authority.", img: `${import.meta.env.BASE_URL}corporate.png` },
+              { title: "Executive Presence", desc: "Command the room with authority and elegance.", img: `${import.meta.env.BASE_URL}speaker.png` }
             ].map((program, i) => (
               <motion.div key={i} whileHover={{ y: -10 }} className="group bg-[#FDFBF7] border border-border/50 overflow-hidden shadow-sm hover:shadow-xl transition-all">
                 <div className="h-64 overflow-hidden">
@@ -120,7 +120,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="md:w-1/2">
-              <img src="/summit.png" alt="Corporate Summit" className="w-full h-auto shadow-2xl" />
+              <img src={`${import.meta.env.BASE_URL}summit.png`} alt="Corporate Summit" className="w-full h-auto shadow-2xl" />
             </div>
             <div className="md:w-1/2">
               <span className="text-secondary uppercase tracking-widest text-sm font-bold mb-4 block">For Organizations</span>
@@ -189,7 +189,7 @@ export default function Home() {
       {/* ROI & CTA Dual Section */}
       <section className="bg-primary relative overflow-hidden text-primary-foreground border-b-[20px] border-[#310103]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#5c0a11] via-[#48080C] to-[#2E0507] opacity-95 z-0" />
-        <img src="/networking.png" alt="Networking" className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay z-0" />
+        <img src={`${import.meta.env.BASE_URL}networking.png`} alt="Networking" className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay z-0" />
         
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="flex flex-col lg:flex-row min-h-[600px]">

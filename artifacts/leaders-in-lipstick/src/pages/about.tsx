@@ -9,7 +9,7 @@ export default function About() {
     <Layout>
       {/* Hero */}
       <section className="pt-32 pb-24 md:pt-40 md:pb-32 bg-card relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5 bg-[url('/hero-bg.png')] bg-cover bg-center mix-blend-overlay"></div>
+        <div className="absolute inset-0 opacity-5 bg-cover bg-center mix-blend-overlay" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.png)` }}></div>
         <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function About() {
               className="relative"
             >
               <div className="absolute -inset-4 border border-primary/20 -translate-x-4 -translate-y-4" />
-              <img src="/diverse-leaders.png" alt="Diverse women leaders" className="w-full h-auto object-cover relative z-10" />
+              <img src={`${import.meta.env.BASE_URL}diverse-leaders.png`} alt="Diverse women leaders" className="w-full h-auto object-cover relative z-10" />
             </motion.div>
 
             <motion.div
@@ -97,7 +97,7 @@ export default function About() {
             </motion.div>
 
             <div className="order-first md:order-last">
-              <img src="/founder.png" alt="Alexandra Sterling" className="w-full h-[600px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}founder.png`} alt="Alexandra Sterling" className="w-full h-[600px] object-cover" />
             </div>
           </div>
         </div>
