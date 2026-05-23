@@ -94,7 +94,7 @@ function InteractiveGlobe() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full flex justify-center items-center" style={{ height: size }}>
+    <div ref={containerRef} className="relative w-full max-w-full overflow-hidden flex justify-center items-center" style={{ height: size }}>
       {/* Loading spinner */}
       {!isLoaded && (
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10">
@@ -187,8 +187,8 @@ export default function Community() {
             </p>
           </div>
 
-          <div className="bg-card border border-border/20 shadow-sm p-8 md:p-12 mb-20">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="bg-card border border-border/20 shadow-sm p-5 sm:p-8 md:p-12 mb-20 overflow-hidden w-full max-w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               
               {/* Left Side: Controls & Info */}
               <div className="space-y-8">
@@ -226,20 +226,20 @@ export default function Community() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 pt-6">
+                <div className="flex flex-col sm:flex-row gap-4 pt-6 w-full">
                   <div className="bg-primary text-white p-4 flex-1">
                     <p className="text-3xl font-serif font-bold">215</p>
-                    <p className="text-xs uppercase tracking-widest mt-1 opacity-80">Countries & Territories</p>
+                    <p className="text-[10px] sm:text-xs uppercase tracking-widest mt-1 opacity-80">Countries & Territories</p>
                   </div>
                   <div className="bg-primary text-white p-4 flex-1">
                     <p className="text-3xl font-serif font-bold">579</p>
-                    <p className="text-xs uppercase tracking-widest mt-1 opacity-80">Networks</p>
+                    <p className="text-[10px] sm:text-xs uppercase tracking-widest mt-1 opacity-80">Networks</p>
                   </div>
                 </div>
               </div>
 
               {/* Right Side: Globe */}
-              <div className="relative flex justify-center items-center">
+              <div className="relative flex justify-center items-center w-full max-w-full overflow-hidden">
                 <InteractiveGlobe />
               </div>
 
