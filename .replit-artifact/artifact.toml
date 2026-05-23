@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Leaders in Lipstick"
+version = "1.0.0"
+id = "artifacts/leaders-in-lipstick"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25772
+
+[services.development]
+run = "pnpm --filter @workspace/leaders-in-lipstick run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/leaders-in-lipstick", "run", "build" ]
+publicDir = "artifacts/leaders-in-lipstick/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25772"
+BASE_PATH = "/"
