@@ -192,8 +192,8 @@ export default function LeadersInLipstick() {
           {/* CTA */}
           <ScrollReveal>
             <div className="text-center mt-12">
-              <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] h-14 px-12 text-base shadow-xl">
-                <Link href="/apply" className="text-white hover:text-white">Apply for Membership</Link>
+              <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] text-[#D4B06A] hover:text-[#D4B06A] font-bold h-14 px-12 text-base shadow-xl">
+                <Link href="/apply" className="text-[#D4B06A] hover:text-[#D4B06A]">Apply for Membership</Link>
               </Button>
             </div>
           </ScrollReveal>

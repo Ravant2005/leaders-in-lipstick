@@ -84,8 +84,8 @@ export default function ROI() {
                   Develop a solid foundation in all aspects of measuring learning impact and evaluating learning and performance solutions. This comprehensive program offers small group interactions, application exercises, and a running case study. Gain new skills to assess your learning programs' impact and to develop and implement your organization's evaluation strategy.
                 </p>
 
-                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] h-14 px-12 text-base shadow-xl">
-                  <Link href="/programs" className="text-white hover:text-white">EXPLORE &rarr;</Link>
+                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] text-[#D4B06A] hover:text-[#D4B06A] font-bold h-14 px-12 text-base shadow-xl">
+                  <Link href="/programs" className="text-[#D4B06A] hover:text-[#D4B06A]">EXPLORE &rarr;</Link>
                 </Button>
              </ScrollReveal>
           </div>

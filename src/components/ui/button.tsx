@@ -1,9 +1,9 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'glass';
-  size?: 'sm' | 'md' | 'lg';
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'glass' | 'outline' | 'link' | 'ghost' | 'icon';
+  size?: 'sm' | 'md' | 'lg' | 'icon' | 'default';
   asChild?: boolean;
   children: React.ReactNode;
 }
@@ -28,13 +28,20 @@ export const Button: React.FC<ButtonProps> = ({
     glass: 'glass-burgundy text-white hover:shadow-lg',
   }[variant];
 
-  const Component = asChild ? 'span' : 'button';
+  if (asChild && React.isValidElement(children)) {
+    const child = children as React.ReactElement<any>;
+    return React.cloneElement(child, {
+      className: cn(baseClasses, sizeClasses, variantClasses, className, child.props.className),
+      ...props
+    });
+  }
+
   return (
-    <Component
+    <button
       className={cn(baseClasses, sizeClasses, variantClasses, className)}
-      {...(asChild ? {} : props)}
+      {...props}
     >
       {children}
-    </Component>
+    </button>
   );
 };

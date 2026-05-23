@@ -57,7 +57,23 @@ const locationsData = [
 
 function InteractiveGlobe() {
   const globeEl = useRef<any>();
+  const containerRef = useRef<HTMLDivElement>(null);
   const [selectedLocation, setSelectedLocation] = useState<any | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [size, setSize] = useState(500);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        if (entry.contentRect.width > 0) {
+          setSize(Math.min(entry.contentRect.width, 560));
+        }
+      }
+    });
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (globeEl.current) {
@@ -66,46 +82,47 @@ function InteractiveGlobe() {
       globeEl.current.controls().enableZoom = false;
       globeEl.current.pointOfView({ altitude: 2.5 });
     }
-  }, []);
+  }, [isLoaded]);
 
   const handlePointHover = useCallback((point: any) => {
     if (point) {
       setSelectedLocation(point);
-      // Optional: Pause rotation on hover
-      if (globeEl.current) {
-        globeEl.current.controls().autoRotate = false;
-      }
+      if (globeEl.current) globeEl.current.controls().autoRotate = false;
     } else {
-      // Don't auto-dismiss immediately so user can read it,
-      // or we can dismiss if they hover away. Let's keep it visible until they hover another or click X.
-      if (globeEl.current) {
-        globeEl.current.controls().autoRotate = true;
-      }
+      if (globeEl.current) globeEl.current.controls().autoRotate = true;
     }
   }, []);
 
   return (
-    <div className="relative w-full h-[600px] flex justify-center items-center">
+    <div ref={containerRef} className="relative w-full flex justify-center items-center" style={{ height: size }}>
+      {/* Loading spinner */}
+      {!isLoaded && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10">
+          <div className="w-16 h-16 rounded-full border-4 border-[#D4B06A]/30 border-t-[#D4B06A] animate-spin" />
+          <p className="text-sm text-[#1E1A17]/50 tracking-widest uppercase font-medium">Loading Globe…</p>
+        </div>
+      )}
+
       <Globe
         ref={globeEl}
-        width={600}
-        height={600}
+        width={size}
+        height={size}
         backgroundColor="rgba(0,0,0,0)"
         showAtmosphere={true}
         atmosphereColor="#D4B06A"
         atmosphereAltitude={0.15}
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
         bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+        onGlobeReady={() => setIsLoaded(true)}
         pointsData={locationsData}
         pointLat="lat"
         pointLng="lng"
-        pointColor={() => "#7B1728"} // Deep red points
+        pointColor={() => "#7B1728"}
         pointAltitude={0.02}
-        pointRadius={2.0} // Increased radius for visibility
+        pointRadius={2.0}
         pointsMerge={false}
         onPointHover={handlePointHover}
         pointResolution={32}
-        // Rings for radar effect
         ringsData={locationsData}
         ringLat="lat"
         ringLng="lng"
@@ -122,15 +139,15 @@ function InteractiveGlobe() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#FDFBF9] border border-[#D4B06A]/40 shadow-2xl p-6 min-w-[320px] rounded-sm pointer-events-auto"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 bg-[#FDFBF9] border border-[#D4B06A]/40 shadow-2xl p-6 w-[280px] sm:min-w-[320px] rounded-sm pointer-events-auto"
           >
-            <button 
+            <button
               onClick={() => setSelectedLocation(null)}
               className="absolute top-4 right-4 text-[#1E1A17]/40 hover:text-[#5B0E1A] transition-colors"
             >
               <X className="w-4 h-4" />
             </button>
-            <h3 className="font-serif text-2xl font-bold text-[#5B0E1A] mb-4 pr-6">
+            <h3 className="font-serif text-xl font-bold text-[#5B0E1A] mb-4 pr-6">
               {selectedLocation.name}
             </h3>
             <div className="space-y-4">

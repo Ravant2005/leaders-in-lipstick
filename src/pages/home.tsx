@@ -68,8 +68,8 @@ export default function Home() {
             </div>
 
             <div className="mt-10">
-              <Button size="lg" className="rounded-none h-14 px-10 text-base bg-[#6E0F1F] hover:bg-[#5B0E1A] shadow-xl transition-all" asChild>
-                <Link href="/about" className="text-white hover:text-white">START &rarr;</Link>
+              <Button size="lg" className="rounded-none h-14 px-10 text-base bg-[#6E0F1F] hover:bg-[#5B0E1A] text-[#D4B06A] hover:text-[#D4B06A] font-bold shadow-xl transition-all" asChild>
+                <Link href="/about" className="text-[#D4B06A] hover:text-[#D4B06A]">START &rarr;</Link>
               </Button>
             </div>
           </div>
@@ -129,8 +129,8 @@ export default function Home() {
                 <p className="text-lg text-[#1E1A17]/70 leading-relaxed mb-8">
                   We deliver end to end solutions in the Learning & Development space, that is intended to have a direct and holistic impact on business results, team performances and individual efficacies.
                 </p>
-                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] text-white transition-colors h-14 px-10 text-base">
-                  <Link href="/about">Learn More About Us</Link>
+                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] text-[#D4B06A] hover:text-[#D4B06A] font-bold transition-colors h-14 px-10 text-base">
+                  <Link href="/apply">Learn More About Us</Link>
                 </Button>
               </div>
             </ScrollReveal>
@@ -148,11 +148,11 @@ export default function Home() {
               <p className="font-serif text-2xl text-[#6E0F1F] mb-10">We Celebrate Women Leaders</p>
               
               <div className="flex justify-center gap-6">
-                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] text-white h-14 px-10">
-                  <Link href="/apply">JOIN US</Link>
+                <Button asChild className="rounded-none bg-[#6E0F1F] hover:bg-[#5B0E1A] h-14 px-10 font-bold tracking-widest shadow-xl">
+                  <Link href="/apply" className="text-[#D4B06A] hover:text-[#D4B06A]">JOIN US</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-none border-[#5B0E1A] text-[#5B0E1A] hover:bg-[#5B0E1A] hover:text-white h-14 px-10">
-                  <Link href="/leadersinlipstick">EXPLORE &rarr;</Link>
+                <Button asChild variant="outline" className="rounded-none border-[#5B0E1A] h-14 px-10 shadow-xl">
+                  <Link href="/leadersinlipstick" className="text-[#5B0E1A] hover:bg-[#5B0E1A] hover:text-[#D4B06A]">EXPLORE &rarr;</Link>
                 </Button>
               </div>
            </ScrollReveal>
